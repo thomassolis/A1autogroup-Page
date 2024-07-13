@@ -38,42 +38,6 @@
 </head>
 <body>
 
-  <!-- <div id="carouselExampleIndicators" class="carousel-slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active c-item">
-        <img src="img/logos web click-01.png" class="d-block w-100 c-img" alt="...">
-      </div>
-      <div class="carousel-item c-item">
-        <img src="img/logos web click-03.png" class="d-block w-100 c-img" alt="...">
-      </div>
-      <div class="carousel-item c-item">
-        <img src="img/logos web click-05.png" class="d-block w-100 c-img" alt="...">
-      </div>
-      <div class="carousel-item c-item">
-        <img src="img/logos web click-09.png" class="d-block w-100 c-img" alt="...">
-      </div>
-      <div class="carousel-item c-item">
-        <img src="img/banner tokiko-01.png" class="d-block w-100 c-img" alt="...">
-      </div>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carousel-selector" style="background-color: red;" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="carousel-selector" style="background-color: red;" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="carousel-selector" style="background-color: red;" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="carousel-selector" style="background-color: red;" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="carousel-selector" style="background-color: red;" aria-label="Slide 5"></button>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
-      <span class="carousel-control-prev-icon"  aria-hidden="true" ></span>
-      <span class="visually-hidden" >Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-
-  </div> -->
-
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carousel-selector" style="background-color: red;" aria-current="true" aria-label="Slide 1"></button>
@@ -309,45 +273,37 @@
       }
     
       function abrirInstagram() {
-        // Usuario de Instagram al que quieres dirigir
+  
         var nombreUsuario = "a1.autogroup";
 
-        // URL del perfil de Instagram
-        var urlInstagram = "https://www.instagram.com/" + nombreUsuario;
 
-        // Abrir enlace en una nueva pestaña
+        var urlInstagram = "https://www.instagram.com/" + nombreUsuario;
         window.open(urlInstagram, "_blank");
       }
 
 
       document.getElementById('whatsapp-icon').addEventListener('click', function() {
-        // Número de teléfono al que se enviará el mensaje
+
         var phoneNumber = '+50769558525';
 
-        // Intenta abrir la aplicación de WhatsApp en el móvil
         var whatsappLink = 'whatsapp://send?phone=' + phoneNumber;
         window.location.href = whatsappLink;
 
-        // Si no se puede abrir la aplicación, redirige a WhatsApp Web
         setTimeout(function() {
             var whatsappWebLink = 'https://web.whatsapp.com/send?phone=' + phoneNumber;
             window.location.href = whatsappWebLink;
-        }, 2000); // Espera 2 segundos antes de redirigir a WhatsApp Web (puedes ajustar el tiempo según tus necesidades)
+        }, 2000); 
       });
 
       document.getElementById('whatsapp-icon2').addEventListener('click', function() {
-        // Número de teléfono al que se enviará el mensaje
         var phoneNumber = '+50769558525';
-
-        // Intenta abrir la aplicación de WhatsApp en el móvil
         var whatsappLink = 'whatsapp://send?phone=' + phoneNumber;
         window.location.href = whatsappLink;
 
-        // Si no se puede abrir la aplicación, redirige a WhatsApp Web
         setTimeout(function() {
             var whatsappWebLink = 'https://web.whatsapp.com/send?phone=' + phoneNumber;
             window.location.href = whatsappWebLink;
-        }, 2000); // Espera 2 segundos antes de redirigir a WhatsApp Web (puedes ajustar el tiempo según tus necesidades)
+        }, 2000);
       });
 
 
